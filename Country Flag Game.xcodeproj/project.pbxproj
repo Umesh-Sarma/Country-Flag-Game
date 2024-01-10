@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		1E9523332B4D9ED300F2499B /* Country_Flag_GameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9523322B4D9ED300F2499B /* Country_Flag_GameApp.swift */; };
-		1E9523352B4D9ED300F2499B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9523342B4D9ED300F2499B /* ContentView.swift */; };
 		1E9523372B4D9ED400F2499B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E9523362B4D9ED400F2499B /* Assets.xcassets */; };
 		1E95233A2B4D9ED400F2499B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E9523392B4D9ED400F2499B /* Preview Assets.xcassets */; };
+		1E9523422B4DA52E00F2499B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9523412B4DA52E00F2499B /* ContentView.swift */; };
+		1E9523492B4EEA0100F2499B /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9523482B4EEA0100F2499B /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1E95232F2B4D9ED300F2499B /* Country Flag Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Country Flag Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E9523322B4D9ED300F2499B /* Country_Flag_GameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country_Flag_GameApp.swift; sourceTree = "<group>"; };
-		1E9523342B4D9ED300F2499B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1E9523362B4D9ED400F2499B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E9523392B4D9ED400F2499B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1E9523412B4DA52E00F2499B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1E9523482B4EEA0100F2499B /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,10 @@
 		1E9523312B4D9ED300F2499B /* Country Flag Game */ = {
 			isa = PBXGroup;
 			children = (
+				1E9523472B4DA6B200F2499B /* Models */,
+				1E9523462B4DA69500F2499B /* Components */,
+				1E9523452B4DA63700F2499B /* Views */,
 				1E9523322B4D9ED300F2499B /* Country_Flag_GameApp.swift */,
-				1E9523342B4D9ED300F2499B /* ContentView.swift */,
 				1E9523362B4D9ED400F2499B /* Assets.xcassets */,
 				1E9523382B4D9ED400F2499B /* Preview Content */,
 			);
@@ -65,6 +69,29 @@
 				1E9523392B4D9ED400F2499B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1E9523452B4DA63700F2499B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1E9523412B4DA52E00F2499B /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1E9523462B4DA69500F2499B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1E9523472B4DA6B200F2499B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E9523482B4EEA0100F2499B /* Question.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +164,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E9523352B4D9ED300F2499B /* ContentView.swift in Sources */,
+				1E9523492B4EEA0100F2499B /* Question.swift in Sources */,
+				1E9523422B4DA52E00F2499B /* ContentView.swift in Sources */,
 				1E9523332B4D9ED300F2499B /* Country_Flag_GameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
