@@ -11,8 +11,7 @@ struct ProgressBar: View {
     var progress: CGFloat
     
     var body: some View {
-        ZStack(alignment: .leading) {
-
+        ZStack(alignment: .leading, content: {
             Rectangle()
                 .frame(maxWidth: 350, maxHeight: 4)
                 .foregroundColor(.gray)
@@ -22,8 +21,7 @@ struct ProgressBar: View {
                 .frame(width: progress, height: 4)
                 .foregroundColor(.yellow)
                 .cornerRadius(10)
-
-        }
+        })
     }
 }
 

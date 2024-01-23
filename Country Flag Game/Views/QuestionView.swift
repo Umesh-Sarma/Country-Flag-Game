@@ -12,17 +12,21 @@ struct QuestionView: View {
     var body: some View {
         
         if gameManager.playingGame {
-            VStack(spacing: 20) {
-                HStack {
-                    Text("Country Flag Quiz")
-                        .foregroundColor(.yellow)
-                        .fontWeight(.heavy)
-                    Spacer()
-                    Text("\(gameManager.index) out of \(gameManager.questions.count)")
-                        .foregroundColor(.yellow)
-                }
+            VStack(spacing: 20, content: {
+                HStack(content: {
+                    
+                        Text("Country Flag Game")
+                            .foregroundColor(.yellow)
+                            .fontWeight(.heavy)
+                        Spacer()
+                        Text("\(gameManager.index) out of \(gameManager.questions.count)")
+                            .foregroundColor(.yellow)
+                    }
+                )
+                    
+                
                 ProgressBar(progress: gameManager.progress)
-                VStack(spacing: 10) {
+                VStack(spacing: 10, content: {
                     Text("Which country flag is this?")
                     Image(gameManager.country)
                         .resizable()
@@ -31,7 +35,9 @@ struct QuestionView: View {
                         AnswerRow(answer: answer)
                             .environmentObject(gameManager)
                     }
-                }
+                })
+                   
+                
                 Button {
                     gameManager.goToNextQuestion()
                 } label: {
@@ -39,7 +45,9 @@ struct QuestionView: View {
                 }
                 .disabled(!gameManager.answerSelected)
                 Spacer()
-            }
+            })
+               
+
             .padding()
             .background(.cyan)
         }

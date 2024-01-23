@@ -13,7 +13,7 @@ struct AnswerRow: View {
     @State private var isSelected = false
     
     var body: some View {
-        HStack(spacing: 20) {
+        HStack(spacing: 20, content: {
             Image(systemName: "circle.fill")
                 .font(.caption)
             Text(answer.text)
@@ -24,7 +24,7 @@ struct AnswerRow: View {
                 Image(systemName: answer.isCorrect ? "checkmark.circle.fill" : "x.circle.fill")
                     .foregroundColor(answer.isCorrect ? .green : .red)
             }
-        }
+        })
         .padding()
         .frame(width: 300, alignment: .leading)
         .background(.white)

@@ -16,7 +16,7 @@ struct ContentView: View {
                     Text("Country Flag Game")
                         .font(.title)
                         .fontWeight(.heavy)
-                        foregroundColor(.yellow)
+                        .foregroundColor(.yellow) 
                     Text("Ready to test your skillz")
                         .foregroundColor(.yellow)
                     
@@ -25,14 +25,14 @@ struct ContentView: View {
                     QuestionView()
                         .environmentObject(gameManager)
                 }
-            label: {
-                CustomButton(text: "Start")
-            }
+                label: {
+                    CustomButton(text: "Start")
+                }
             }
             )
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .ignoresSafeArea(.all)
-            .background(.cyan)
+            .background(Color.cyan)
         }
         .padding()
     }
