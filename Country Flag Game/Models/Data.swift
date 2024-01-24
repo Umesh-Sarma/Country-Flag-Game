@@ -50,7 +50,17 @@ import Foundation
 
             "Ukraine",
 
-            "United States"
+            "United States",
+            
+            "Brazil",
+            
+            "Japan",
+            
+            "Mexico",
+            
+            "Canada",
+            
+            "Australia"
 
         ]
 
